@@ -73,9 +73,9 @@ export default function Home() {
         </div>
         
         <div className="mt-12 animate-fade-in-up animation-delay-1000">
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 shadow-[0_0_15px_hsl(var(--primary)/0.5)] transition-shadow hover:shadow-[0_0_25px_hsl(var(--primary)/0.7)]">
-            Coming Soon
-          </Button>
+          <p className="text-2xl sm:text-3xl font-bold text-accent tracking-wider" style={{ textShadow: '0 0 10px hsl(var(--accent)/0.8), 0 0 20px hsl(var(--accent)/0.6)' }}>
+            Registrations Opening Soon
+          </p>
         </div>
       </div>
     </main>
