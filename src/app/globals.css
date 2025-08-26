@@ -55,21 +55,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(-45deg, hsl(var(--background)), hsl(0 0% 12.5%), hsl(var(--background)), hsl(0 0% 10.2%));
-    background-size: 400% 400%;
-    animation: subtle-gradient 15s ease infinite;
-  }
-}
-
-@keyframes subtle-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
 
@@ -114,3 +99,11 @@
   animation-delay: 4s;
 }
 
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 1000px, 0px);
+  }
+}

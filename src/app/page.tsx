@@ -31,12 +31,27 @@ const features = [
 
 export default function Home() {
   return (
-    <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 sm:p-8 text-foreground font-body overflow-hidden">
+    <main className="relative flex flex-col items-center justify-center min-h-screen p-4 sm:p-8 text-foreground font-body overflow-hidden">
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-background z-0"
+        style={{
+          backgroundImage: `
+            linear-gradient(hsl(var(--primary)/0.05) 1px, transparent 1px),
+            linear-gradient(90deg, hsl(var(--primary)/0.05) 1px, transparent 1px),
+            linear-gradient(hsl(var(--accent)/0.03) 1px, transparent 1px),
+            linear-gradient(90deg, hsl(var(--accent)/0.03) 1px, transparent 1px)
+          `,
+          backgroundSize: '100px 100px, 100px 100px, 20px 20px, 20px 20px',
+          backgroundPosition: '-2px -2px, -2px -2px, -1px -1px, -1px -1px',
+          animation: 'move-background 120s linear infinite',
+        }}
+      ></div>
+      
       {/* Background shapes */}
       <div className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-blob"></div>
       <div className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
 
-      <div className="flex flex-col items-center space-y-16 max-w-5xl w-full text-center">
+      <div className="relative z-10 flex flex-col items-center space-y-16 max-w-5xl w-full text-center">
         <header className="space-y-4 animate-fade-in-down">
           <h1
             className="text-6xl sm:text-7xl md:text-9xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-primary via-primary to-blue-400"
@@ -89,45 +104,3 @@ export default function Home() {
     </main>
   );
 }
-
-// Add custom animation classes to globals.css if they don't exist
-// globals.css
-/*
-@keyframes blob {
-  0% { transform: translate(0px, 0px) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0px, 0px) scale(1); }
-}
-
-@keyframes fade-in-down {
-  0% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fade-in-up {
-  0% { opacity: 0; transform: translateY(20px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.animate-blob {
-  animation: blob 7s infinite;
-}
-
-.animate-fade-in-down {
-  animation: fade-in-down 0.8s ease-out forwards;
-}
-
-.animate-fade-in-up {
-  animation: fade-in-up 0.8s ease-out forwards;
-}
-
-.animation-delay-500 {
-  animation-delay: 0.5s;
-  animation-fill-mode: both; 
-}
-.animation-delay-1000 {
-  animation-delay: 1s;
-  animation-fill-mode: both; 
-}
-*/
