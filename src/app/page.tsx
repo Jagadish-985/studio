@@ -16,23 +16,23 @@ export default function Home() {
       <div className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
 
       <div className="relative z-10 flex flex-col items-center max-w-5xl w-full text-center">
-        <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl pb-8 sm:pb-12 px-8 sm:px-12 shadow-2xl animate-fade-in-up w-full">
+        <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl pb-8 sm:pb-12 px-4 sm:px-12 shadow-2xl animate-fade-in-up w-full">
           <header className="space-y-4">
-            <div className="flex justify-between items-center mb-6 pt-2 sm:pt-4">
+            <div className="flex justify-between items-center mb-6 pt-4 sm:pt-4">
               <Image
                 src="/123.png"
-                width={240}
-                height={85}
+                width={120}
+                height={43}
                 alt="College Logo"
-                className="rounded-lg"
+                className="rounded-lg w-[120px] sm:w-[240px] h-auto"
                 data-ai-hint="college logo"
               />
               <Image
                 src="/1.png"
-                width={240}
-                height={90}
+                width={120}
+                height={45}
                 alt="Pravrutti Logo"
-                className="rounded-lg"
+                className="rounded-lg w-[120px] sm:w-[240px] h-auto"
                 data-ai-hint="event logo"
               />
             </div>
