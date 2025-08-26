@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Trophy, Calendar } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -18,6 +19,24 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center max-w-5xl w-full text-center">
         <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 sm:p-12 shadow-2xl animate-fade-in-up w-full">
           <header className="space-y-4">
+            <div className="flex justify-center items-center gap-8 mb-6">
+              <Image
+                src="https://picsum.photos/100/100"
+                width={100}
+                height={100}
+                alt="College Logo"
+                className="rounded-full"
+                data-ai-hint="college logo"
+              />
+              <Image
+                src="https://picsum.photos/100/100"
+                width={100}
+                height={100}
+                alt="Pravrutti Logo"
+                className="rounded-full"
+                data-ai-hint="event logo"
+              />
+            </div>
             <h1
               className="text-6xl sm:text-7xl md:text-9xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-primary via-primary to-blue-400"
               style={{
