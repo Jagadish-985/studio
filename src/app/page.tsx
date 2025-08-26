@@ -58,10 +58,10 @@ export default function Home() {
         </div>
 
         <div className="w-full mt-8 grid gap-8 animate-fade-in-up animation-delay-500">
-          <Card className="bg-accent/10 backdrop-blur-sm border-accent/20 shadow-2xl border">
+          <Card className="bg-success/10 backdrop-blur-sm border-success/20 shadow-2xl border">
             <CardHeader className="flex-row items-center gap-4 justify-center">
-              <Trophy className="w-10 h-10 text-accent" />
-              <CardTitle className="text-3xl text-accent">₹10,00,000 Prize Pool</CardTitle>
+              <Trophy className="w-10 h-10 text-success" />
+              <CardTitle className="text-3xl text-success">₹10,00,000 Prize Pool</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground text-lg">

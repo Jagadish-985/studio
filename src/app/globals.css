@@ -24,6 +24,7 @@
     --input: 0 0% 17%;
     --ring: 0 100% 50%; /* Electric Red */
     --radius: 0.5rem;
+    --success: 140 80% 60%; /* Green */
   }
 
   .dark {
@@ -46,6 +47,7 @@
     --border: 0 0% 17%;
     --input: 0 0% 17%;
     --ring: 0 100% 50%;
+    --success: 140 80% 60%; /* Green */
   }
 }
 
@@ -108,11 +110,11 @@
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.2; }
+  50% { opacity: 0; }
 }
 
 .animate-blink {
-  animation: blink 1s infinite;
+  animation: blink 0.8s infinite;
 }
 
 .animate-blob {
