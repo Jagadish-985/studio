@@ -25,7 +25,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 alt="College Logo"
-                className="rounded-full"
+                className="rounded-lg"
                 data-ai-hint="college logo"
               />
               <Image
@@ -33,7 +33,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 alt="Pravrutti Logo"
-                className="rounded-full"
+                className="rounded-lg"
                 data-ai-hint="event logo"
               />
             </div>
