@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, CircuitBoard, BrainCircuit, Trophy, Users } from 'lucide-react';
+import { Trophy, Calendar } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -30,6 +30,12 @@ export default function Home() {
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground tracking-wide max-w-3xl mx-auto">
               Ramaiah University of Applied Sciences proudly presents Pravrutti 2025 – The National Tech Fest of RUAS.
             </p>
+            <div className="flex justify-center items-center gap-2 pt-2">
+              <Calendar className="w-6 h-6 text-accent" />
+              <p className="text-xl sm:text-2xl md:text-3xl text-foreground font-semibold">
+                15th, 16th & 17th October
+              </p>
+            </div>
           </header>
         </div>
 
