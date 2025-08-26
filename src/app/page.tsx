@@ -1,33 +1,4 @@
-import { Code, Cpu, Dna, Rocket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-
-const features = [
-  {
-    icon: <Cpu className="h-12 w-12 text-accent" />,
-    title: 'AI & Machine Learning',
-    description: 'Explore the frontiers of artificial intelligence.',
-    color: 'border-accent/30',
-  },
-  {
-    icon: <Code className="h-12 w-12 text-primary" />,
-    title: 'Competitive Coding',
-    description: 'Challenge your problem-solving skills.',
-    color: 'border-primary/30',
-  },
-  {
-    icon: <Rocket className="h-12 w-12 text-orange-400" />,
-    title: 'Aerospace Innovations',
-    description: 'Discover the future of space exploration.',
-    color: 'border-orange-400/30',
-  },
-  {
-    icon: <Dna className="h-12 w-12 text-purple-400" />,
-    title: 'Biotechnology',
-    description: 'Witness the intersection of tech and biology.',
-    color: 'border-purple-400/30',
-  },
-];
 
 export default function Home() {
   return (
@@ -75,31 +46,6 @@ export default function Home() {
             </Button>
           </div>
         </header>
-
-        <section className="w-full animate-fade-in-up animation-delay-500">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">What to Expect</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {features.map((feature, index) => (
-              <Card key={index} className={`bg-card/50 backdrop-blur-sm border ${feature.color} hover:border-primary/50 transition-all duration-300 transform hover:-translate-y-2`}>
-                <CardContent className="p-6 flex flex-col items-center space-y-4">
-                  {feature.icon}
-                  <h3 className="text-xl font-semibold">{feature.title}</h3>
-                  <p className="text-muted-foreground text-sm">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-
-        <section className="w-full animate-fade-in-up animation-delay-1000">
-           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">Our Sponsors</h2>
-           <div className="flex justify-center items-center gap-8 md:gap-12 flex-wrap">
-              <span className="text-2xl font-semibold text-muted-foreground/50 grayscale hover:grayscale-0 hover:text-foreground transition-all duration-300">Sponsor 1</span>
-              <span className="text-2xl font-semibold text-muted-foreground/50 grayscale hover:grayscale-0 hover:text-foreground transition-all duration-300">Sponsor 2</span>
-              <span className="text-2xl font-semibold text-muted-foreground/50 grayscale hover:grayscale-0 hover:text-foreground transition-all duration-300">Sponsor 3</span>
-              <span className="text-2xl font-semibold text-muted-foreground/50 grayscale hover:grayscale-0 hover:text-foreground transition-all duration-300">Sponsor 4</span>
-           </div>
-        </section>
       </div>
     </main>
   );
