@@ -45,38 +45,8 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="bg-card/50 backdrop-blur-sm border border-primary/20 shadow-xl">
-              <CardHeader className="flex-row items-center gap-4">
-                <Code className="w-8 h-8 text-accent" />
-                <CardTitle>Coding Duels</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Engage in intense programming challenges and algorithmic battles.
-              </CardContent>
-            </Card>
-            <Card className="bg-card/50 backdrop-blur-sm border border-primary/20 shadow-xl">
-              <CardHeader className="flex-row items-center gap-4">
-                <CircuitBoard className="w-8 h-8 text-accent" />
-                <CardTitle>Engineering Marvels</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Showcase your skills in circuit design, robotics, and core engineering.
-              </CardContent>
-            </Card>
-             <Card className="bg-card/50 backdrop-blur-sm border border-primary/20 shadow-xl">
-              <CardHeader className="flex-row items-center gap-4">
-                <BrainCircuit className="w-8 h-8 text-accent" />
-                <CardTitle>Diverse Domains</CardTitle>
-              </CardHeader>
-              <CardContent>
-                From business debates to medical diagnostics and more.
-              </CardContent>
-            </Card>
-          </div>
-
           <Card className="bg-accent/10 backdrop-blur-sm border-accent/20 shadow-2xl border">
-            <CardHeader className="flex-row items-center gap-4">
+            <CardHeader className="flex-row items-center gap-4 justify-center">
               <Trophy className="w-10 h-10 text-accent" />
               <CardTitle className="text-3xl text-accent">₹10,00,000 Prize Pool</CardTitle>
             </CardHeader>
