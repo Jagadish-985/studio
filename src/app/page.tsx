@@ -18,13 +18,13 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center max-w-5xl w-full text-center">
         <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl pb-8 sm:pb-12 px-4 sm:px-12 shadow-2xl animate-fade-in-up w-full">
           <header className="space-y-4">
-            <div className="flex justify-between items-center mb-6 pt-4 sm:pt-4">
+            <div className="flex justify-center items-center gap-4 sm:gap-8 mb-6 pt-8 sm:pt-4">
               <Image
                 src="/123.png"
                 width={120}
                 height={43}
                 alt="College Logo"
-                className="rounded-lg w-[120px] sm:w-[240px] h-auto"
+                className="rounded-lg w-[100px] sm:w-[200px] h-auto"
                 data-ai-hint="college logo"
               />
               <Image
@@ -32,7 +32,7 @@ export default function Home() {
                 width={120}
                 height={45}
                 alt="Pravrutti Logo"
-                className="rounded-lg w-[120px] sm:w-[240px] h-auto"
+                className="rounded-lg w-[100px] sm:w-[200px] h-auto"
                 data-ai-hint="event logo"
               />
             </div>
