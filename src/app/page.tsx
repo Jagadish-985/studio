@@ -1,4 +1,4 @@
-import { ArrowRight, Code, Cpu, Dna, Rocket } from 'lucide-react';
+import { Code, Cpu, Dna, Rocket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -16,16 +16,16 @@ const features = [
     color: 'border-primary/30',
   },
   {
-    icon: <Rocket className="h-12 w-12 text-red-400" />,
+    icon: <Rocket className="h-12 w-12 text-orange-400" />,
     title: 'Aerospace Innovations',
     description: 'Discover the future of space exploration.',
-    color: 'border-red-400/30',
+    color: 'border-orange-400/30',
   },
   {
-    icon: <Dna className="h-12 w-12 text-green-400" />,
+    icon: <Dna className="h-12 w-12 text-purple-400" />,
     title: 'Biotechnology',
     description: 'Witness the intersection of tech and biology.',
-    color: 'border-green-400/30',
+    color: 'border-purple-400/30',
   },
 ];
 
