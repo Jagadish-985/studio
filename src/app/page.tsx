@@ -21,9 +21,9 @@ export default function Home() {
           <header className="space-y-4">
             <div className="flex justify-between items-center mb-6">
               <Image
-                src="https://picsum.photos/120/120"
-                width={120}
-                height={120}
+                src="/college-logo.png"
+                width={240}
+                height={85}
                 alt="College Logo"
                 className="rounded-lg"
                 data-ai-hint="college logo"
