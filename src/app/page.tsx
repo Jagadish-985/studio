@@ -47,8 +47,12 @@ export default function Home() {
           >
             Pravrutti
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground tracking-wide max-w-2xl mx-auto">
-            Where Innovation Converges. A Celebration of Technology, Creativity, and the Future.
+          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground tracking-wide max-w-3xl mx-auto">
+            Ramaiah University of Applied Sciences proudly presents Pravrutti 2025 – The National Tech Fest of RUAS.
+            <br/><br/>
+            Pravrutti embodies the spirit of innovation and action, bringing together the brightest young minds to compete, collaborate, and create impact. Over three electrifying days, participants will push boundaries across 10+ domains—from coding duels and circuit design to business debates, medical diagnostics, and entrepreneurial challenges.
+            <br/><br/>
+            With a ₹10,00,000 prize pool, Pravrutti is not just a competition, it’s a celebration of talent, teamwork, and transformative thinking.
           </p>
           <div className="pt-6">
             <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
