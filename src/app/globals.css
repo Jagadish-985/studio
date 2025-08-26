@@ -16,13 +16,13 @@
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 17%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 110 100% 54%; /* Neon Green #39FF14 */
-    --accent-foreground: 110 100% 10%;
+    --accent: 0 100% 50%; /* Electric Red */
+    --accent-foreground: 0 100% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 17%;
     --input: 0 0% 17%;
-    --ring: 110 100% 54%; /* Neon Green */
+    --ring: 0 100% 50%; /* Electric Red */
     --radius: 0.5rem;
   }
 
@@ -39,13 +39,13 @@
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 17%;
     --muted-foreground: 0 0% 63.9%;
-    --accent: 110 100% 54%;
-    --accent-foreground: 110 100% 10%;
+    --accent: 0 100% 50%;
+    --accent-foreground: 0 100% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 17%;
     --input: 0 0% 17%;
-    --ring: 110 100% 54%;
+    --ring: 0 100% 50%;
   }
 }
 
