@@ -51,9 +51,8 @@ export default function Home() {
             Where Innovation Converges. A Celebration of Technology, Creativity, and the Future.
           </p>
           <div className="pt-6">
-            <Button size="lg" className="group bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
-              Explore Events
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
+              Registrations starting soon
             </Button>
           </div>
         </header>
