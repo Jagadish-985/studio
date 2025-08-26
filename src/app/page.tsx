@@ -32,7 +32,7 @@ export default function Home() {
                 width={120}
                 height={45}
                 alt="Pravrutti Logo"
-                className="rounded-lg w-[100px] sm:w-[200px] h-auto -mt-2"
+                className="rounded-lg w-[100px] sm:w-[200px] h-auto -mt-4"
                 data-ai-hint="event logo"
               />
             </div>
