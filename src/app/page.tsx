@@ -19,7 +19,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center max-w-5xl w-full text-center">
         <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl pb-8 sm:pb-12 px-8 sm:px-12 shadow-2xl animate-fade-in-up w-full">
           <header className="space-y-4">
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex justify-between items-center mb-6 pt-8 sm:pt-12">
               <Image
                 src="/123.png"
                 width={240}
@@ -59,17 +59,6 @@ export default function Home() {
         </div>
 
         <div className="w-full mt-8 grid gap-8 animate-fade-in-up animation-delay-500">
-          <Card className="bg-card/50 backdrop-blur-sm border border-primary/20 shadow-xl">
-            <CardHeader>
-              <CardTitle className="text-2xl text-primary">About The Fest</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground text-lg">
-                Pravrutti embodies the spirit of innovation and action, bringing together the brightest young minds to compete, collaborate, and create impact. It’s a celebration of talent, teamwork, and transformative thinking.
-              </p>
-            </CardContent>
-          </Card>
-
           <Card className="bg-accent/10 backdrop-blur-sm border-accent/20 shadow-2xl border">
             <CardHeader className="flex-row items-center gap-4 justify-center">
               <Trophy className="w-10 h-10 text-accent" />
@@ -85,7 +74,7 @@ export default function Home() {
         
         <div className="mt-12 animate-fade-in-up animation-delay-1000">
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 shadow-[0_0_15px_hsl(var(--primary)/0.5)] transition-shadow hover:shadow-[0_0_25px_hsl(var(--primary)/0.7)]">
-            Registrations starting soon
+            Coming Soon
           </Button>
         </div>
       </div>
