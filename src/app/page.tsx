@@ -17,7 +17,7 @@ export default function Home() {
       <div className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
 
       <div className="relative z-10 flex flex-col items-center max-w-5xl w-full text-center">
-        <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl pt-4 pb-8 sm:pb-12 px-8 sm:px-12 shadow-2xl animate-fade-in-up w-full">
+        <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl pb-8 sm:pb-12 px-8 sm:px-12 shadow-2xl animate-fade-in-up w-full">
           <header className="space-y-4">
             <div className="flex justify-between items-center mb-6">
               <Image
