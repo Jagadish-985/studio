@@ -3,20 +3,11 @@ import { Button } from '@/components/ui/button';
 export default function Home() {
   return (
     <main className="relative flex flex-col items-center justify-center min-h-screen p-4 sm:p-8 text-foreground font-body overflow-hidden">
-      <div
-        className="absolute top-0 left-0 w-full h-full bg-background z-0"
-        style={{
-          backgroundImage: `
-            linear-gradient(hsl(var(--primary)/0.05) 1px, transparent 1px),
-            linear-gradient(90deg, hsl(var(--primary)/0.05) 1px, transparent 1px),
-            linear-gradient(hsl(var(--accent)/0.03) 1px, transparent 1px),
-            linear-gradient(90deg, hsl(var(--accent)/0.03) 1px, transparent 1px)
-          `,
-          backgroundSize: '100px 100px, 100px 100px, 20px 20px, 20px 20px',
-          backgroundPosition: '-2px -2px, -2px -2px, -1px -1px, -1px -1px',
-          animation: 'move-background 120s linear infinite',
-        }}
-      ></div>
+      <div className="absolute inset-0 z-0 bg-background">
+        <div className="absolute inset-0 bg-grid animate-grid-scroll"></div>
+        <div className="absolute inset-0 bg-stars animate-stars-scroll"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+      </div>
       
       {/* Background shapes */}
       <div className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-blob"></div>
@@ -28,7 +19,7 @@ export default function Home() {
             className="text-6xl sm:text-7xl md:text-9xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-primary via-primary to-blue-400"
             style={{
               textShadow:
-                '0 0 10px hsl(var(--primary)/0.7), 0 0 20px hsl(var(--primary)/0.7), 0 0 40px hsl(var(--primary)/0.5)',
+                '0 0 10px hsl(var(--primary)/0.8), 0 0 25px hsl(var(--primary)/0.6), 0 0 50px hsl(var(--primary)/0.4)',
             }}
           >
             Pravrutti
@@ -41,7 +32,7 @@ export default function Home() {
             With a ₹10,00,000 prize pool, Pravrutti is not just a competition, it’s a celebration of talent, teamwork, and transformative thinking.
           </p>
           <div className="pt-6">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 shadow-[0_0_15px_hsl(var(--primary)/0.5)] transition-shadow hover:shadow-[0_0_25px_hsl(var(--primary)/0.7)]">
               Registrations starting soon
             </Button>
           </div>

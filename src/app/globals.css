@@ -4,47 +4,47 @@
 
 @layer base {
   :root {
-    --background: 0 0% 18%; /* Dark Gray #2E2E2E */
+    --background: 0 0% 10%; /* Even darker gray */
     --foreground: 0 0% 98%;
-    --card: 0 0% 22%;
+    --card: 0 0% 14%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 18%;
+    --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
     --primary: 181 100% 74%; /* Electric Blue #7DF9FF */
     --primary-foreground: 180 100% 10%;
-    --secondary: 0 0% 25%;
+    --secondary: 0 0% 17%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 25%;
+    --muted: 0 0% 17%;
     --muted-foreground: 0 0% 63.9%;
     --accent: 110 100% 54%; /* Neon Green #39FF14 */
     --accent-foreground: 110 100% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 25%;
-    --input: 0 0% 25%;
+    --border: 0 0% 17%;
+    --input: 0 0% 17%;
     --ring: 110 100% 54%; /* Neon Green */
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 0 0% 18%;
+    --background: 0 0% 10%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 22%;
+    --card: 0 0% 14%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 18%;
+    --popover: 0 0% 10%;
     --popover-foreground: 0 0% 98%;
     --primary: 181 100% 74%;
     --primary-foreground: 180 100% 10%;
-    --secondary: 0 0% 25%;
+    --secondary: 0 0% 17%;
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 25%;
+    --muted: 0 0% 17%;
     --muted-foreground: 0 0% 63.9%;
     --accent: 110 100% 54%;
     --accent-foreground: 110 100% 10%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 25%;
-    --input: 0 0% 25%;
+    --border: 0 0% 17%;
+    --input: 0 0% 17%;
     --ring: 110 100% 54%;
   }
 }
@@ -56,6 +56,37 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer components {
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--primary) / 0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--primary) / 0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center;
+  }
+
+  .bg-stars {
+    background-image: radial-gradient(hsl(var(--accent) / 0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+@keyframes grid-scroll {
+  0% { transform: translateY(0px) }
+  100% { transform: translateY(-40px) }
+}
+.animate-grid-scroll {
+  animation: grid-scroll 1.5s linear infinite;
+}
+
+@keyframes stars-scroll {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 20px; }
+}
+.animate-stars-scroll {
+  animation: stars-scroll 1s linear infinite;
 }
 
 @keyframes blob {
@@ -97,13 +128,4 @@
 }
 .animation-delay-4000 {
   animation-delay: 4s;
-}
-
-@keyframes move-background {
-  from {
-    transform: translate3d(0px, 0px, 0px);
-  }
-  to {
-    transform: translate3d(1000px, 1000px, 0px);
-  }
 }
