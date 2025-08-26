@@ -1,4 +1,3 @@
-import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Trophy, Calendar } from 'lucide-react';
 import Image from 'next/image';
@@ -19,7 +18,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center max-w-5xl w-full text-center">
         <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl pb-8 sm:pb-12 px-8 sm:px-12 shadow-2xl animate-fade-in-up w-full">
           <header className="space-y-4">
-            <div className="flex justify-between items-center mb-6 pt-8 sm:pt-12">
+            <div className="flex justify-between items-center mb-6 pt-2 sm:pt-4">
               <Image
                 src="/123.png"
                 width={240}
@@ -73,7 +72,7 @@ export default function Home() {
         </div>
         
         <div className="mt-12 animate-fade-in-up animation-delay-1000">
-          <p className="text-2xl sm:text-3xl font-bold text-accent tracking-wider" style={{ textShadow: '0 0 10px hsl(var(--accent)/0.8), 0 0 20px hsl(var(--accent)/0.6)' }}>
+          <p className="text-2xl sm:text-3xl font-bold text-accent tracking-wider animate-blink" style={{ textShadow: '0 0 10px hsl(var(--accent)/0.8), 0 0 20px hsl(var(--accent)/0.6)' }}>
             Registrations Opening Soon
           </p>
         </div>
