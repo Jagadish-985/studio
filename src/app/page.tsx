@@ -19,19 +19,19 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center max-w-5xl w-full text-center">
         <div className="bg-card/50 backdrop-blur-sm border border-primary/20 rounded-2xl p-8 sm:p-12 shadow-2xl animate-fade-in-up w-full">
           <header className="space-y-4">
-            <div className="flex justify-center items-center gap-8 mb-6">
+            <div className="flex justify-between items-center mb-6">
               <Image
-                src="https://picsum.photos/100/100"
-                width={100}
-                height={100}
+                src="https://picsum.photos/120/120"
+                width={120}
+                height={120}
                 alt="College Logo"
                 className="rounded-lg"
                 data-ai-hint="college logo"
               />
               <Image
-                src="https://picsum.photos/100/100"
-                width={100}
-                height={100}
+                src="https://picsum.photos/120/120"
+                width={120}
+                height={120}
                 alt="Pravrutti Logo"
                 className="rounded-lg"
                 data-ai-hint="event logo"
